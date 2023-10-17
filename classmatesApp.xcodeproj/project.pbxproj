@@ -19,6 +19,8 @@
 		9345DC0D2AD6E4AB00FB8FA1 /* classmatesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345DC0C2AD6E4AB00FB8FA1 /* classmatesAppUITestsLaunchTests.swift */; };
 		9345DC1A2AD6E59500FB8FA1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345DC192AD6E59500FB8FA1 /* ViewController2.swift */; };
 		93D207412AD987E00063592D /* Classmates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D207402AD987E00063592D /* Classmates.swift */; };
+		93F50C842ADED44300186C7C /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F50C832ADED44300186C7C /* ViewControllerHome.swift */; };
+		93F50C862ADED4F100186C7C /* homePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F50C852ADED4F100186C7C /* homePageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9345DC0C2AD6E4AB00FB8FA1 /* classmatesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classmatesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9345DC192AD6E59500FB8FA1 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		93D207402AD987E00063592D /* Classmates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmates.swift; sourceTree = "<group>"; };
+		93F50C832ADED44300186C7C /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		93F50C852ADED4F100186C7C /* homePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		9345DBDA2AD6E4AA00FB8FA1 = {
 			isa = PBXGroup;
 			children = (
+				93F50C832ADED44300186C7C /* ViewControllerHome.swift */,
+				93F50C852ADED4F100186C7C /* homePageVC.swift */,
 				9345DBE52AD6E4AA00FB8FA1 /* classmatesApp */,
 				9345DBFF2AD6E4AB00FB8FA1 /* classmatesAppTests */,
 				9345DC092AD6E4AB00FB8FA1 /* classmatesAppUITests */,
@@ -269,6 +275,8 @@
 			files = (
 				9345DC1A2AD6E59500FB8FA1 /* ViewController2.swift in Sources */,
 				93D207412AD987E00063592D /* Classmates.swift in Sources */,
+				93F50C862ADED4F100186C7C /* homePageVC.swift in Sources */,
+				93F50C842ADED44300186C7C /* ViewControllerHome.swift in Sources */,
 				9345DBEB2AD6E4AA00FB8FA1 /* ViewController.swift in Sources */,
 				9345DBE72AD6E4AA00FB8FA1 /* AppDelegate.swift in Sources */,
 				9345DBE92AD6E4AA00FB8FA1 /* SceneDelegate.swift in Sources */,

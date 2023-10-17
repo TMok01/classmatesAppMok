@@ -20,7 +20,9 @@ public class Classmates {
         self.cash = cash
     }
     
-    
+    var printObj: String {
+        return "Nickname: \(nickName) \n Name: \(name) \n Cash: $\(cash)"
+    }
     
     
 }
