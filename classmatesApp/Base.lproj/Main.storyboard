@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Home-->
         <scene sceneID="dfF-58-aXf">
             <objects>
-                <viewController id="QHN-tn-eIV" sceneMemberID="viewController">
+                <viewController id="QHN-tn-eIV" customClass="ViewControllerHome" customModule="classmatesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qiH-NG-O9h">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,10 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="63"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="button:" destination="PUL-dp-DxG" eventType="touchUpInside" id="5sH-mS-2fH"/>
                                     <action selector="ggjgj:" destination="PUL-dp-DxG" eventType="touchUpInside" id="XID-iR-fT6"/>
+                                    <action selector="home2InfoButton:" destination="QHN-tn-eIV" eventType="touchUpInside" id="Qbp-Bf-itr"/>
+                                    <action selector="home2InfoButton:" destination="PUL-dp-DxG" eventType="touchUpInside" id="XTf-1h-Kyt"/>
                                     <action selector="homePagePage:" destination="PUL-dp-DxG" eventType="touchUpInside" id="bfl-bW-mAO"/>
                                 </connections>
                             </button>
@@ -40,14 +43,15 @@
                         <viewLayoutGuide key="safeArea" id="DdI-RJ-Qg5"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iii-Qy-yYm"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="blah" id="WbG-8z-Ut4"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue1" id="UDZ-fU-mtL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="My0-Gu-KN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="PUL-dp-DxG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-596.18320610687022" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="330.53435114503816" y="3.5211267605633805"/>
         </scene>
         <!--viewController-->
         <scene sceneID="tne-QT-ifu">
@@ -167,37 +171,47 @@
                     </view>
                     <navigationItem key="navigationItem" id="14r-VI-tzn"/>
                     <connections>
+                        <outlet property="cashOutlet" destination="RdX-H0-eRI" id="TCB-L5-lbV"/>
+                        <outlet property="nameOutlet" destination="RNQ-61-HLf" id="JrJ-Ap-2PV"/>
+                        <outlet property="nickNameOutlet" destination="hjQ-fq-KJY" id="TLm-UI-46M"/>
                         <outlet property="studentView" destination="cTF-FO-ssL" id="4h5-Sr-6at"/>
                         <segue destination="XzE-TH-K0D" kind="show" identifier="segue1" id="PnY-8s-fbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1165.6488549618321" y="3.5211267605633805"/>
         </scene>
         <!--viewController2-->
         <scene sceneID="eQA-uf-afn">
             <objects>
-                <viewController title="viewController2" id="XzE-TH-K0D" sceneMemberID="viewController">
+                <viewController title="viewController2" id="XzE-TH-K0D" customClass="ViewController2" customModule="classmatesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vbR-ei-VVY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" translatesAutoresizingMaskIntoConstraints="NO" id="gJJ-7N-rAi">
+                                <rect key="frame" x="0.0" y="65" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJJ-7N-rAi" id="2I2-2j-wqd">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jZB-Sh-v00"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="PoF-IT-cpx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kva-MF-0TH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="4"/>
+            <point key="canvasLocation" x="2074" y="4"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

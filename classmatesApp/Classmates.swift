@@ -11,10 +11,10 @@ public class Classmates {
     
     var nickName: String = ""
     var name: String = ""
-    var cash: Double = 0.0
+    var cash: Int = 0
     
     
-    init(nickName: String, name: String, cash: Double) {
+    init(nickName: String, name: String, cash: Int) {
         self.nickName = nickName
         self.name = name
         self.cash = cash
